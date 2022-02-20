@@ -15,11 +15,11 @@ void StopWatch::stop ()
     m_stop = std::chrono::steady_clock::now();
 }
 
-void StopWatch::print()
+int StopWatch::print()
 {
     auto elapsed = std::chrono::duration_cast<std::chrono::milliseconds>(m_stop - m_start);
 
-	std::cout << m_counter+elapsed.count() << std::endl;
+	return m_counter+elapsed.count();
 }
 
 void StopWatch::pause ()

@@ -1,5 +1,8 @@
 #include <iostream>
+#include <set>
+#include <vector>
 #include "StopWatch.h"
+#include <algorithm>
 
 class Generate
 {
@@ -45,15 +48,47 @@ int main()
 {
     using namespace std;
 
-    int N =50;
+    int N;
+    cout<<"Input number N:"<<endl;
+    cin>>N;
     Generate Array (N);
 
-    for (int i=0;i<Array.getN();i++)
+
+    set<int> Set;
+    StopWatch Tset;
+    Tset.start();
+    //
+
+    for (int i=0;i<N;i++)
     {
-        cout<<Array[i]<<endl;
+        Set.insert(Array[i]);
     }
 
+    //
+    Tset.stop();
 
+
+
+    vector <int> Vector(N);
+    StopWatch Tvector;
+    Tvector.start();
+    //
+
+    for(int i=0;i<N;i++)
+    {
+        Vector[i]=Array[i];
+    }
+    sort(Vector.begin(),Vector.end());
+
+    //
+    Tvector.stop();
+
+
+    cout<<"for set :"<<Tset.print() <<endl;
+
+    cout<<"for vector:"<<Tvector.print()<<endl;
+
+    ///vector выигрывает , причем при Ќ меньше 100000 посто€нна€ примерно равна 2 , при больших значени€х примерно 1.5
 
 
     return 0;

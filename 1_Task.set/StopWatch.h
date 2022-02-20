@@ -12,7 +12,7 @@ public:
 
     void start();
     void stop();
-    void print();
+    int print();
     void pause();
     void resume();
 
