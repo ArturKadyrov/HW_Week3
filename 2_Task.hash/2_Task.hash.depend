@@ -1,0 +1,23 @@
+# depslib dependency file v1.0
+1645388488 source:d:\c++\homework 2 semestr\hw_week3\2_task.hash\hash.cpp
+	"hash.h"
+
+1645388488 d:\c++\homework 2 semestr\hw_week3\2_task.hash\hash.h
+	<iostream>
+	<functional>
+	<string>
+
+1645389863 source:d:\c++\homework 2 semestr\hw_week3\2_task.hash\main.cpp
+	<functional>
+	<iostream>
+	<string>
+	<unordered_set>
+	"Cat.h"
+
+1645390297 d:\c++\homework 2 semestr\hw_week3\2_task.hash\cat.h
+	<functional>
+	<string>
+
+1645390297 source:d:\c++\homework 2 semestr\hw_week3\2_task.hash\cat.cpp
+	"Cat.h"
+

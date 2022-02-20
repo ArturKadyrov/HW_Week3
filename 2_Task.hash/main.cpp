@@ -1,10 +1,9 @@
-#include <functional>
 #include <iostream>
 #include <string>
+#include <functional>
 #include <unordered_set>
 
-// http://www.boost.org/doc/libs/1_35_0/doc/html/hash/combine.html
-
+////hash begin
 template < typename T >
 void hash_combine(std::size_t & seed, const T & value) noexcept
 {
@@ -31,42 +30,46 @@ std::size_t hash_value(const Types & ... args) noexcept
 	hash_value(seed, args...);
 	return seed;
 }
+///hash end
 
-class Customer
+
+
+class Cat
 {
-private:
-	friend struct Customer_Hash;
-	friend struct Customer_Equal;
-
 public:
-	explicit Customer(const std::string & name, const std::size_t mark) :
-		m_name(name), m_mark(mark)
+
+    explicit Cat (const std::string & name , std::size_t year , std::string colour ) : m_name(name), m_year(year) , m_colour(colour)
 	{}
 
-	~Customer() noexcept = default;
+	~Cat () noexcept = default;
 
-public:
-	friend std::ostream & operator << (std::ostream & stream, const Customer & customer)
+	friend std::ostream & operator << (std::ostream & stream, const Cat& cat)
 	{
-		return (stream << customer.m_name << "," << customer.m_mark);
+		return (stream << cat.m_name << " , " << cat.m_year<<" , " <<cat.m_colour);
 	}
 
 private:
-	std::string m_name;
-	std::size_t m_mark;
+    std::string m_name;
+    std::size_t m_year;
+    std::string m_colour;
+
+    friend struct Cat_Hash;
+	friend struct Cat_Equal;
+
 };
 
-struct Customer_Hash
+
+struct Cat_Hash
 {
-	std::size_t operator() (const Customer & customer) const noexcept
+	std::size_t operator() (const Cat & cat) const noexcept
 	{
-		return hash_value(customer.m_name, customer.m_mark);
+		return hash_value(cat.m_name, cat.m_year , cat.m_colour);
 	}
 };
 
-struct Customer_Equal
+struct Cat_Equal
 {
-	bool operator() (const Customer & lhs, const Customer & rhs) const noexcept
+	bool operator() (const Cat & lhs, const Cat & rhs) const noexcept
 	{
 		return (lhs.m_name == rhs.m_name);
 	}
@@ -74,17 +77,20 @@ struct Customer_Equal
 
 int main(int argc, char ** argv)
 {
-	std::unordered_set < Customer, Customer_Hash, Customer_Equal > customers;
 
-	customers.insert(Customer("Ivan", 42));
-	customers.insert(Customer("Jens", 66));
+    std::unordered_set < Cat , Cat_Hash , Cat_Equal > cats;
 
-	for (const auto & customer : customers)
+    cats.insert(Cat("Baris",2,"Black"));
+    cats.insert(Cat("Barsik",3,"White"));
+    cats.insert(Cat("Cat",4,"Red"));
+    cats.insert(Cat("Barsik",1,"White"));
+
+
+	for (const auto & cat : cats)
 	{
-		std::cout << customer << std::endl;
+		std::cout << cat << std::endl;
 	}
 
-	system("pause");
 
 	return EXIT_SUCCESS;
 }
