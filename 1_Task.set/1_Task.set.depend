@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1645380666 source:d:\c++\homework 2 semestr\hw_week3\1_task.set\main.cpp
+	<iostream>
+	"StopWatch.h"
+
+1645378959 d:\c++\homework 2 semestr\hw_week3\1_task.set\stopwatch.h
+	<iostream>
+	<chrono>
+
