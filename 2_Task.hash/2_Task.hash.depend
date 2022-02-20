@@ -4,13 +4,11 @@
 
 1645392863 d:\c++\homework 2 semestr\hw_week3\2_task.hash\hash.h
 
-1645393108 source:d:\c++\homework 2 semestr\hw_week3\2_task.hash\main.cpp
+1645396347 source:d:\c++\homework 2 semestr\hw_week3\2_task.hash\main.cpp
 	<iostream>
-	<string>
-	<functional>
 	<unordered_set>
-	"hash.h"
 	"Cat.h"
+	<chrono>
 
 1645393341 d:\c++\homework 2 semestr\hw_week3\2_task.hash\cat.h
 	<iostream>
@@ -19,4 +17,13 @@
 1645393277 source:d:\c++\homework 2 semestr\hw_week3\2_task.hash\cat.cpp
 	"Cat.h"
 	"hash.h"
+
+1645396782 source:d:\c++\homework 2 semestr\hw_week3\2_task.hash\generate_collisions.cpp
+	"generate_collisions.h"
+	<unordered_set>
+	<chrono>
+	"Cat.h"
+
+1645396835 d:\c++\homework 2 semestr\hw_week3\2_task.hash\generate_collisions.h
+	<string>
 

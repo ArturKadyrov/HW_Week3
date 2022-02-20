@@ -1,10 +1,17 @@
 #include <iostream>
-#include <string>
-#include <functional>
-#include <unordered_set>
 
-#include "hash.h"
+
+#include <unordered_set>
+#include <chrono>
 #include "Cat.h"
+
+//#include "hash.h"
+//#include "Cat.h"
+
+
+#include "generate_collisions.h"
+
+
 
 
 int main(int argc, char ** argv)
@@ -24,5 +31,8 @@ int main(int argc, char ** argv)
 	}
 
 
-	return EXIT_SUCCESS;
+
+
+
+	return 0;
 }
