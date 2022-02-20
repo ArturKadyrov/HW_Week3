@@ -1,23 +1,44 @@
 #ifndef CAT_H_INCLUDED
 #define CAT_H_INCLUDED
 
-#include <functional>
+#include <iostream>
 #include <string>
 
-template < typename T >
-void hash_combine(std::size_t & seed, const T & value) noexcept;
 
-template < typename T >
-void hash_value(std::size_t & seed, const T & value) noexcept;
+class Cat
+{
+public:
 
-template < typename T, typename ... Types >
-void hash_value(std::size_t & seed, const T & value, const Types & ... args) noexcept;
+    explicit Cat (const std::string & name , std::size_t year , std::string colour ) : m_name(name), m_year(year) , m_colour(colour)
+	{}
 
-template < typename ... Types >
-std::size_t hash_value(const Types & ... args) noexcept;
+	~Cat () noexcept = default;
+
+	friend std::ostream & operator << (std::ostream & stream, const Cat& cat)
+	{
+		return (stream << cat.m_name << " , " << cat.m_year<<" , " <<cat.m_colour);
+	}
 
 
+private:
+    std::string m_name;
+    std::size_t m_year;
+    std::string m_colour;
 
+    friend struct Cat_Hash;
+	friend struct Cat_Equal;
+
+};
+
+struct Cat_Hash
+{
+	std::size_t operator() (const Cat & cat) const noexcept;
+};
+
+struct Cat_Equal
+{
+	bool operator() (const Cat & lhs, const Cat & rhs) const noexcept;
+};
 
 
 #endif // CAT_H_INCLUDED
