@@ -1,31 +1,59 @@
 #include <iostream>
 #include "StopWatch.h"
 
-int * generate_ (int N)
+class Generate
 {
-    int * Array = new int [N];
+private:
 
-   srand( time( 0 ) );
-   for (int i =0 ; i<N; i++)
+    int m_N;
+    int * m_Array;
+
+public:
+
+    Generate(int N=10)
     {
-        Array[i] = rand();
+        m_N=N;
+        m_Array = new int [N];
+
+        srand( time( 0 ) );
+        for (int i =0 ; i<N; i++)
+        {
+            m_Array[i] = rand();
+        }
+    }
+    ~Generate ()
+    {
+        delete [] m_Array;
+    }
+    int getN()
+    {
+        return m_N;
     }
 
-    return Array;
-}
+    int operator[] (int index)
+    {
+        if(index>=m_N || index<0)
+            std::cout<<"index error";
+        return m_Array[index];
+    }
+
+};
+
+
 
 int main()
 {
     using namespace std;
 
     int N =50;
-    int * Array = generate_(N);
-    for (int i=0;i<N;i++)
+    Generate Array (N);
+
+    for (int i=0;i<Array.getN();i++)
     {
         cout<<Array[i]<<endl;
     }
 
-    delete [] Array;
+
 
 
     return 0;
