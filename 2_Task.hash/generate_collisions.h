@@ -5,17 +5,7 @@
 
 std::string rand_string ();
 
-/*
-int generate_collisions (int N)
-{
-    std::unordered_set < Cat , Cat_Hash , Cat_Equal > cats;
-    srand( time( 0 ) );
-    for (int i =0 ; i<N; i++)
-    {
-        std::string name = rand()
-        cats.insert(Cat("Baris",2,"Black"));
-    }
-}
-*/
+std::size_t generate_collisions (int N);
+
 
 #endif // GENERATE_COLLISIONS_H_INCLUDED
