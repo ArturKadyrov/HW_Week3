@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1645451222 source:d:\c++\homework 2 semestr\hw_week3\3_task\main.cpp
+	<iostream>
+	"generate_collisions.h"
+
+1645449460 d:\c++\homework 2 semestr\hw_week3\3_task\generate_collisions.h
+	<string>
+
