@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1645455196 source:d:\c++\homework 2 semestr\hw_week3\3_task\main.cpp
+1645455536 source:d:\c++\homework 2 semestr\hw_week3\3_task\main.cpp
 	<iostream>
 	"generate_collisions.h"
 
@@ -20,5 +20,5 @@
 	"Cat.h"
 	"hash.h"
 
-1645455214 d:\c++\homework 2 semestr\hw_week3\3_task\hash.h
+1645458483 d:\c++\homework 2 semestr\hw_week3\3_task\hash.h
 
