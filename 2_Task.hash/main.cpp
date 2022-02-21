@@ -9,9 +9,13 @@ int main(int argc, char ** argv)
 {
     using namespace std;
 
-   cout<<generate_collisions(10000)<<endl;
 
 
+    int N=1000000;
+    for (int i=10000;i<N;i+=10000)
+    {
+        cout<<generate_collisions(i)<<endl;
+    }
 
 
 
