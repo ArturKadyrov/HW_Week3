@@ -1,8 +1,24 @@
 # depslib dependency file v1.0
-1645451222 source:d:\c++\homework 2 semestr\hw_week3\3_task\main.cpp
+1645455196 source:d:\c++\homework 2 semestr\hw_week3\3_task\main.cpp
 	<iostream>
 	"generate_collisions.h"
 
 1645449460 d:\c++\homework 2 semestr\hw_week3\3_task\generate_collisions.h
 	<string>
+
+1645451259 source:d:\c++\homework 2 semestr\hw_week3\3_task\generate_collisions.cpp
+	"generate_collisions.h"
+	<unordered_set>
+	<chrono>
+	"Cat.h"
+
+1645451259 d:\c++\homework 2 semestr\hw_week3\3_task\cat.h
+	<iostream>
+	<string>
+
+1645454985 source:d:\c++\homework 2 semestr\hw_week3\3_task\cat.cpp
+	"Cat.h"
+	"hash.h"
+
+1645455214 d:\c++\homework 2 semestr\hw_week3\3_task\hash.h
 
