@@ -1,15 +1,16 @@
 # depslib dependency file v1.0
-1645384175 source:d:\c++\homework 2 semestr\hw_week3\1_task.set\main.cpp
+1646757695 source:d:\c++\homework 2 semestr\hw_week3\1_task.set\main.cpp
 	<iostream>
 	<set>
 	<vector>
 	"StopWatch.h"
 	<algorithm>
+	<random>
 
-1645384130 d:\c++\homework 2 semestr\hw_week3\1_task.set\stopwatch.h
+1645449420 d:\c++\homework 2 semestr\hw_week3\1_task.set\stopwatch.h
 	<iostream>
 	<chrono>
 
-1645384130 source:d:\c++\homework 2 semestr\hw_week3\1_task.set\stopwatch.cpp
+1645449420 source:d:\c++\homework 2 semestr\hw_week3\1_task.set\stopwatch.cpp
 	"StopWatch.h"
 

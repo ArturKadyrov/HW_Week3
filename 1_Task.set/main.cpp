@@ -3,6 +3,7 @@
 #include <vector>
 #include "StopWatch.h"
 #include <algorithm>
+#include <random>
 
 class Generate
 {
@@ -40,6 +41,8 @@ public:
                 m_Array[counter]= x;
                 counter++;
             }
+        }
+
     }
     ~Generate ()
     {
