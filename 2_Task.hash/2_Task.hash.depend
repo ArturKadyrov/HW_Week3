@@ -4,7 +4,7 @@
 
 1645449460 d:\c++\homework 2 semestr\hw_week3\2_task.hash\hash.h
 
-1645449460 source:d:\c++\homework 2 semestr\hw_week3\2_task.hash\main.cpp
+1646761310 source:d:\c++\homework 2 semestr\hw_week3\2_task.hash\main.cpp
 	<iostream>
 	"generate_collisions.h"
 
@@ -16,7 +16,7 @@
 	"Cat.h"
 	"hash.h"
 
-1646760123 source:d:\c++\homework 2 semestr\hw_week3\2_task.hash\generate_collisions.cpp
+1646761684 source:d:\c++\homework 2 semestr\hw_week3\2_task.hash\generate_collisions.cpp
 	"generate_collisions.h"
 	<unordered_set>
 	<chrono>
