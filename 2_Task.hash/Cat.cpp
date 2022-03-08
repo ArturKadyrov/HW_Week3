@@ -10,6 +10,6 @@ std::size_t Cat_Hash::operator() (const Cat & cat) const noexcept
 
 bool Cat_Equal::operator() (const Cat & lhs, const Cat & rhs) const noexcept
 {
-    return (lhs.m_name == rhs.m_name);
+    return (lhs.m_name == rhs.m_name && lhs.m_year == rhs.m_year && lhs.m_colour == rhs.m_colour);
 }
 

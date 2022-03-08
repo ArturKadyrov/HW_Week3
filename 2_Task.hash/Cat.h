@@ -9,7 +9,7 @@ class Cat
 {
 public:
 
-    explicit Cat (const std::string & name , std::size_t year , std::string colour ) : m_name(name), m_year(year) , m_colour(colour)
+    explicit Cat (const std::string & name , std::size_t year , const std::string & colour ) : m_name(name), m_year(year) , m_colour(colour)
 	{}
 
 	~Cat () noexcept = default;

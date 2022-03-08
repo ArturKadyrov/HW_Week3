@@ -11,7 +11,7 @@ int main(int argc, char ** argv)
 
 
 
-    int N=1000000;
+    int N=100000;
     for (int i=10000;i<N;i+=10000)
     {
         cout<<generate_collisions(i)<<endl;

@@ -2,26 +2,27 @@
 1645388488 source:d:\c++\homework 2 semestr\hw_week3\2_task.hash\hash.cpp
 	"hash.h"
 
-1645392863 d:\c++\homework 2 semestr\hw_week3\2_task.hash\hash.h
+1645449460 d:\c++\homework 2 semestr\hw_week3\2_task.hash\hash.h
 
-1645447757 source:d:\c++\homework 2 semestr\hw_week3\2_task.hash\main.cpp
+1645449460 source:d:\c++\homework 2 semestr\hw_week3\2_task.hash\main.cpp
 	<iostream>
 	"generate_collisions.h"
 
-1645393341 d:\c++\homework 2 semestr\hw_week3\2_task.hash\cat.h
+1646760123 d:\c++\homework 2 semestr\hw_week3\2_task.hash\cat.h
 	<iostream>
 	<string>
 
-1645393277 source:d:\c++\homework 2 semestr\hw_week3\2_task.hash\cat.cpp
+1646760123 source:d:\c++\homework 2 semestr\hw_week3\2_task.hash\cat.cpp
 	"Cat.h"
 	"hash.h"
 
-1645447744 source:d:\c++\homework 2 semestr\hw_week3\2_task.hash\generate_collisions.cpp
+1646760123 source:d:\c++\homework 2 semestr\hw_week3\2_task.hash\generate_collisions.cpp
 	"generate_collisions.h"
 	<unordered_set>
 	<chrono>
 	"Cat.h"
+	<random>
 
-1645447689 d:\c++\homework 2 semestr\hw_week3\2_task.hash\generate_collisions.h
+1645449460 d:\c++\homework 2 semestr\hw_week3\2_task.hash\generate_collisions.h
 	<string>
 
