@@ -18,11 +18,28 @@ public:
         m_N=N;
         m_Array = new int [N];
 
-        srand( time( 0 ) );
-        for (int i =0 ; i<N; i++)
+
+        std::random_device rd;
+        std::mt19937 gen(rd());
+
+        int counter = 0;
+        while (counter!=N)
         {
-            m_Array[i] = rand();
-        }
+            int x = gen();
+            bool repeat = false ;
+            for (int i =0 ; i<counter; i++)
+            {
+               if( m_Array[i] == x)
+               {
+                   repeat = true;
+                   break;
+               }
+            }
+            if(!repeat)
+            {
+                m_Array[counter]= x;
+                counter++;
+            }
     }
     ~Generate ()
     {
